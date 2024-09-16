@@ -115,11 +115,11 @@ INDEX:
     PEBONA.primarySlider = function() {
         if ($pSlider.elExists()) {
 
-            var interleaveOffset = 0.5;
+            let interleaveOffset = 0.5;
 
             if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
                  // Firefox-related activities
-                 var interleaveOffset = 0;
+                interleaveOffset = 0;
             }
 
             var swiperOptions = {
@@ -552,14 +552,15 @@ INDEX:
         // Custom INC/DESC clickable button
         $(".cart-input").append('<div class="dec qtybutton"><i class="fa fa-angle-down"></i></div><div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>');
         $(".qtybutton").on("click", function() {
+            let newVal;
             var $button = $(this);
             var oldValue = $button.parent().find("input").val();
             if ($button.hasClass('inc')) {
-                var newVal = parseFloat(oldValue) + 1;
+                newVal = parseFloat(oldValue) + 1;
             } else {
                 // Don't allow decrementing below zero
                 if (oldValue > 0) {
-                    var newVal = parseFloat(oldValue) - 1;
+                    newVal = parseFloat(oldValue) - 1;
                 } else {
                     newVal = 0;
                 }
