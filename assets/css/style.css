@@ -1275,9 +1275,7 @@ header .list-inline .dropdown-menu ul li a:focus,
 #primary_slider.white-scheme .slide-content .promo-title,
 #primary_slider.white-scheme .slide-content .main-title,
 #primary_slider.white-scheme .slide-content .subtitle,
-.default-btn,
-.default-btn:hover,
-.default-btn:focus,
+
 .default-btn.secondary,
 .default-btn.secondary:hover,
 .default-btn.secondary:focus,
@@ -1323,6 +1321,11 @@ header.white-scheme .header-cart button i,
 .contact-form-wrapper .btn.btn-secondary,
 #whole .contact-form-wrapper .btn.btn-secondary:hover,
 .error-wrapper .btn.btn-secondary {
+    color: black;
+}
+.default-btn,
+.default-btn:hover,
+.default-btn:focus{
     color: white;
 }
 
