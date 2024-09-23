@@ -240,6 +240,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+    #main_nav.white-scheme>.menu-toggle+ul>li:not(.active)>a {
+        color: white;
+    }
     .wrapper-with-right-padding {
         padding-right: 0;
     }

@@ -5326,7 +5326,7 @@ header.header-type-3 .header-search-area form {
 }
 
 header.header-type-4 .main-nav-area.sticky {
-    background: rgba(31, 30, 31, 0.9);
+    background: rgba(255, 255, 255, 0.674);
 }
 
 header.header-type-4 .main-nav-area.sticky:hover {
@@ -5416,6 +5416,7 @@ header.header-type-4 .header-text span:first-child {
     animation-fill-mode: none;
     -webkit-animation-play-state: running;
     animation-play-state: running;
+    color: white;
 }
 
 .main-nav-area.sticky:hover {
